@@ -39,7 +39,7 @@
       }
 
       // Get params
-      print_r($url);
+      // print_r($url);
       $this->params = $url ? array_values($url) : [];
 
       // Call a callback with array of params
