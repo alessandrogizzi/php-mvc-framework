@@ -8,7 +8,7 @@ class Posts extends Controller
   }
 
   $this->postModel = $this->model('Post');
- } 
+ }
 
  public function index()
  {
@@ -20,5 +20,16 @@ class Posts extends Controller
   ];
 
   $this->view('posts/index', $data);
+ }
+
+ public function add()
+ {
+  $data = [
+   'title' => '',
+   'body'  => '',
+  ];
+
+  $this->view('posts/add', $data);
+
  }
 }
